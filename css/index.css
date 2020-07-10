@@ -40,7 +40,7 @@ body{
         url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.svg#iconfont') format('svg');
       }
 .tubiao{
-        font-family:"iconfont";
+        font-family:"iconfont"!important;
         font-size: 12px;
           } 
 .title2{
