@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* 导航开始 */
+.box{
+    width:100%;
+    height:32px;
+    color:#999;
+    background-color: rgb(242, 242, 242);
+    font: 12px tahoma, arial, "\5b8b\4f53";
+    display: flex;
+    min-width: 1320px;
+}
+
+.box-title{
+    width: 218px;
+    height: 32px;
+    color:#999;
+    float: left;
+    margin-left: 125px;
+    display: flex;
+    
+}
+.title1{
+    width: 84px;
+    height: 16px;
+    float: left;
+    margin-top: 7px;
+    text-align: center;
+    font-size: 12px;
+     }
+     @font-face {
+        font-family: 'iconfont';  /* project id 1919782 */
+        src: url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.eot');
+        src: url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.eot?#iefix') format('embedded-opentype'),
+        url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.woff2') format('woff2'),
+        url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.woff') format('woff'),
+        url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.ttf') format('truetype'),
+        url('http://at.alicdn.com/t/font_1919782_f0srhxwc6gs.svg#iconfont') format('svg');
+      }
+.tubiao{
+        font-family:"iconfont";
+        font-size: 12px;
+          } 
+.title2{
+   width: 66px;
+   height: 16px;
+   float: left;
+   margin-top: 7px;
+   text-align: center;
+   font-size: 12px;
+   
+   
+   
+}
+.title3{
+    width: 68px;
+    height: 16px;
+    float: left;
+    
+    margin-top: 7px;
+    text-align: center;
+    font-size: 12px;
+   
+}
+.box-title2{
+    width: auto;
+    height: 32px;
+    float: left;
+    margin-left: 500px;
+    text-align: center;
+    font-size: 12px;
+    min-width: 1320px;;
+}
+.right1-1{
+    width: 70px;
+    height: 16px;
+    background-color: rgb(242, 242, 242);
+    font-size: 12px;
+    text-align: center;
+    border: none;
+
+}
+.right1-2{
+    width: 60px;
+    height: 16px;
+    background-color: rgb(242, 242, 242);
+    font-size: 12px;
+    text-align: center;
+    border: none;
+}
+.right1{
+    width: 74px;
+    height: 16px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
+    color: #999999;
+}
+.box a{
+    text-decoration: none;
+    color: #999999;
+    
+    }
+.box a:hover{
+ color:red;
+}
+/* 导航结束 */
+/* 搜索开始 */
+.search{
+    width: 100%;
+    height: 132px;
+    min-width: 1320px;
+}
+.search-left{
+    width: 290px;
+    height: 130px;
+    margin-left: 125px;
+    float: left;
+}
+.search-right{
+width: 574px;
+height: 35px;
+
+float: left;
+margin-left: 90px;
+margin-top: 40px;
+}
+.right-search{
+    width: 434px;
+    height: 34px;
+    float: left;
+    border:2px solid red;
+}
+.left-search{
+    width: 130px;
+    height: 40px;
+    margin-left: 0;
+    float: left;
+    background: red;
+    border: 0;
+    color: white;
+    font-size: 19px;
+} 
+.search-right input{
+    outline: none;
+}
+/* 搜索结束 */
+/* 分类开始 */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fenlei{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.fenlei .left{
+    width: 200px;
+	height: 535px;
+	background-color: pink;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+}
+ .fenlei .left li{
+    height: 31.19px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	height: 45px;
+	background-color:rgba(0, 0, 0, 0.55)
+} 
+.fenlei .left .top{
+	background-color: red;
+	height: 50px;
+}
+.fenlei .left .top i{
+	color: white;
+}
+.fenlei .left li a{
+    font-family: "iconfont";
+	color: white;
+	
+	font-size: 14px;
+	color: white;
+    font-weight:400;
+    text-decoration: none;
+} 
+.fenlei .left .top a{
+	font-size: 16px;
+	font-weight:700;
+}
+.fenlei .left .top a{
+	font-size: 16px;
+	font-weight:700;
+}
+
+.item{
+    
+    float: left;
+    margin-left: 20px;
+   
+}
+.item img{
+    width: 100px;
+    height: 32px;
+   
+    
+}
+.item1{
+    text-align: center;
+    
+}
+.fenlei1{
+    margin-left: 155px;
+    text-align: center;
+    display: flex;
+    
+    
+}
+.fenlei1 a{
+    text-decoration: none;
+    color:black;
+    }
+.fenlei1 a:hover{
+ color:red;
+}
+/* 分类结束 */
+/* banner开始 */
+.banner{
+    width: 100%;
+    height: 521px;
+    margin: 0 auto;
+    border-top: 1.5px solid red;
+}
+.banner img{
+    width: 1180px;
+    height: 500px;
+    margin-left: 189px;
+    
+}
+/* banner结束 */
+/* 中部开始 */
+.one{
+    width: 1300px;
+    height: 394px;
+    
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.zuo{
+    width: 234px;
+    height: 371px;
+    
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.zhong{
+    width: 485px;
+    height: 371px;
+    
+    float: left;
+    margin-right: 20px;
+}
+.head1{
+    width: 234px;
+    height: 40px;
+   
+    padding-top: 15px;
+    
+
+}
+.head2{
+    width: 485px;
+    height: 40px;
+    
+    padding-top: 15px;
+}
+.img1{
+    width: 234px;
+    height: 316px;
+}
+.img2{
+    width: 485px;
+    height: 316px;
+}
+h3{
+    margin: 0;
+    font-weight: normal;
+}
+.one a{
+    text-decoration: none;
+    color:black;
+}
+/* 中部结束 */
+/* 网格开始 */
+.two{
+    width: 1300px;
+    height: 90px;
+    
+    margin: 0 auto;
+}
+
+.two li{
+    float: left;
+    border: 1px solid #999999;
+    
+}
+.two img{
+    width: 122px;
+    height: 90px;
+}
+.two1{
+    margin-left: 25px;
+}
+/* 网格结束 */
+/* 开始 */
+.tu{
+width: 214px;
+height: 25px;
+margin-left: 134px;
+margin-top: 30px;
+}
+/* 结束 */
+/*  */
+.three{
+    width: 1300px;
+    height: 640px;
+    
+    
+    margin: 0 auto;
+}
+.three img{
+    width: 235px;
+    height: 301px;
+
+}
+.three li{
+    float: left;
+    margin-right:15px;
+}
+.three1{
+    margin-left: 35px;
+}
+/*  */
+.f{
+    width: 100%;
+    height: 30px;
+    background: #999;
+    opacity: 0.1;
+    min-width: 1320px;
+}
+/* 底部开始 */
+.bottom{
+    width: 100%;
+    height: 490px;
+    min-width: 1320px;
+    
+}
+.bot1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    min-width: 1320px;
+}
+.bot1 img{
+    width: 280px;
+    height: 90px;
+    margin:0;
+    
+}
+.bot2{
+    width: 100%;
+    height: 170px;
+    border-top:1px solid #999999;
+    padding-top: 30px;
+    min-width: 1320px;
+}
+.word{
+    width: 170px;
+    height: 170px;
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+    }
+.word img{
+    width: 100px;
+    height: 100px;
+    
+}
+.word a{
+    text-decoration: none;
+    color: #999999;
+    font-size: 12px;
+}
+.word1{
+    margin-left: 230px;
+}
+.bot3 img{
+    margin-left: 185px;  
+}
+.bot4{
+    width: 100%;
+    height: 270px;
+    background: black;
+    border-top: 2px solid red;
+    text-align:left;
+    padding-left: 200px;
+    padding-top: 10px;
+    font-size: 12px;
+    min-width: 1320px;
+}
+.bot4 a{
+    color: white;
+    text-decoration: none;
+    
+}
+.bot4 p{
+    color:#999;
+    font-size: 13px;
+}
+.bot4 img{
+    width: 700px;
+    height: 60px;
+    
+}
+
+/* 底部结束 */
+.zongbox{
+    width: 1519px;
+    
+    overflow: hidden;
+    
+}
