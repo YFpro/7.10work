@@ -12,7 +12,64 @@ body{
     display: flex;
     min-width: 1320px;
 }
-
+.yf{
+    width: 100%;
+    height: 40px;
+    background: red;
+    position: fixed;
+    top: -50px;
+    transition: top .5s ease;
+}
+.yf3{
+    float: left;
+    color: rgb(242, 242, 242);
+    margin-left: 140px;
+    margin-top: 6px;
+    font-size: 20px;
+}
+.yf1{
+    width: 434px;
+    height: 30px;
+    float: left;
+    border:2px solid red;
+    margin-left:100px;
+    margin-top: 3px;
+}
+.yf2{
+    width: 43px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 3px;
+    float: left;
+    background: red;
+    border: 0;
+    color: white;
+    font-size: 19px;
+}
+.nav{
+    width: 40px;
+    height: 440px;
+    opacity: 0;
+    transform:scale(0,0);
+    transform-origin: left bottom;
+    overflow: hidden;
+    position: fixed;
+    left: 76px;
+    top:250px;
+    bottom: 0;
+    transition:  all 1s ease ;
+    
+    
+}
+.nav li{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    background:  #999;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
 .box-title{
     width: 218px;
     height: 32px;
@@ -130,7 +187,7 @@ margin-top: 40px;
 }
 .right-search{
     width: 434px;
-    height: 34px;
+    height: 36px;
     float: left;
     border:2px solid red;
 }
@@ -234,17 +291,69 @@ ul{
 }
 /* 分类结束 */
 /* banner开始 */
-.banner{
-    width: 100%;
-    height: 521px;
-    margin: 0 auto;
-    border-top: 1.5px solid red;
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
 }
-.banner img{
+.banner{
     width: 1180px;
     height: 500px;
-    margin-left: 189px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
     
+}
+.banner1{
+    width: 500%;
+    height: 500px;
+    
+}
+.banner1 a{
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+.banner1 a:nth-child(1){
+    background-image: url(../img/3.jpg);
+}
+.banner1 a:nth-child(2){
+    background-image: url(../img/banner1.jpg);
+}
+.banner1 a:nth-child(3){
+    background-image: url(../img/banner2.jpg);
+}
+.banner1 a:nth-child(4){
+    background-image: url(../img/banner3.jpg);
+
+}
+.banner1 a:nth-child(5){
+    background-image: url(../img/3.jpg);
+    
+}
+.btns{
+    width: 300px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 450px;
+    margin: auto;
+    
+}
+.btns li{
+width:20%;height:50%;
+margin-left:5%;
+background:#aaa;
+cursor: pointer;
+float:left;
+box-shadow:0 0 5px#000 ;
+}
+.btns li:nth-child(1){
+background: #555;
 }
 /* banner结束 */
 /* 中部开始 */

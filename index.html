@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/animate.js"></script>
+    
     <title>天猫页面模拟练习</title>
 </head>
 <body>
+<div class="yf">
+    <span class="yf3">TMALL 天猫</span>
+    <input type="text"class="yf1" placeholder="搜索 天猫 商品/品牌/店铺">
+    <button class="yf2">搜索</button>
+</div>
 <div class="zongbox">
     <!-- 导航开始 -->
     <div class="box">
@@ -146,7 +153,19 @@
     <!-- 分类结束 -->
     <!-- banner开始 -->
     <div class="banner">
-        <img src="img/3.jpg" alt="" >
+        <div class="banner1">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <ul class="btns">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
     <!-- banner结束 -->
     <!-- 中部开始 -->
@@ -175,6 +194,18 @@
     </div>
     <!-- 中部结束 -->
     <!-- 网格开始 -->
+    <ul class="nav">
+        <li style="background: red;">导航</li>
+        <li>天猫超市</li>
+        <li>天猫国际</li>
+        <li>户外出行</li>
+        <li>潮店酷玩</li>
+        <li>美丽人生</li>
+        <li>居家生活</li>
+        <li>打造爱巢</li>
+        <li>猜你喜欢</li>
+        <li></li>
+    </ul>
     <div class="two">
         <ul class="two1" >
             <li><img src="img/7.jpg" alt=""></li>
@@ -298,5 +329,75 @@
      </div>
     <!-- 底部结束 -->
 </div>
+<script>
+var win=document.getElementsByClassName("banner")[0];
+var banner=document.getElementsByClassName("banner1")[0];
+var btns=document.querySelectorAll(".btns li");
+var winW=parseInt(getComputedStyle (win,null).width);
+var num = 0;
+function move(){
+   num++;
+   if (num>btns.length-1){
+       animate(banner,{
+          "margin-left":-num*winW
+      },500,Tween.Linear,function(){
+          banner.style.marginLeft=0;
+      })
+       num=0;    
+  } else{
+      animate(banner,{
+          "margin-left":-num*winW
+   },500)
+}
+
+       for(var i=0;i<btns.length;i++){
+       btns[i].style.background="#aaa";
+       }
+   btns[num].style.background="#555";
+   
+}
+
+var t =setInterval(move,2000);
+          
+    for (let i = 0; i< btns.length; i++){
+    btns[i].onclick = function (){
+     num = i;
+     animate(banner,{
+    "margin-left":-num*winW
+},500)
+   for (var j = 0; j< btns.length; j++){
+    btns[j].style.background = "#aaa";
+      }
+        btns[num].style.background ="#555";
+}
+}
+
+    win.onmouseover=function(){
+      clearInterval(t);
+ }
+    win.onmouseout=function(){
+    t= setInterval(move,2000);
+}
+var yf=document.querySelector(".yf");
+      window.onscroll=function(){
+          var nav=document.querySelector(".nav");
+          var st=document.documentElement.scrollTop;
+          if(st>730){
+              yf.style.top=0;
+          }else{
+              yf.style.top=-50+"px";
+          }
+          if(st>850){
+              nav.style.transform="scale(1.1)"
+              nav.style.opacity=1;
+          }
+          else{
+            nav.style.transform="scale(0.0)"
+              nav.style.opacity=0;
+          }
+      } 
+
+           
+</script>
 </body>
 </html>
