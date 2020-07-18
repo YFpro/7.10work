@@ -216,22 +216,25 @@ ul{
     height: 32px;
     display: flex;
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .fenlei .left{
     width: 200px;
-	height: 535px;
-	background-color: pink;
+	height: 530px;
+	
 	z-index: 20;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    position:absolute;
+    margin-left:165px;
+    float: left;
+    
 }
  .fenlei .left li{
-    height: 31.19px;
+    height:30px;
 	display: flex;
 	align-items: center;
 	font-size: 16px;
-	height: 45px;
 	background-color:rgba(0, 0, 0, 0.55)
 } 
 .fenlei .left .top{
@@ -244,7 +247,6 @@ ul{
 .fenlei .left li a{
     font-family: "iconfont";
 	color: white;
-	
 	font-size: 14px;
 	color: white;
     font-weight:400;
@@ -276,9 +278,10 @@ ul{
     
 }
 .fenlei1{
-    margin-left: 155px;
+    margin-left: 350px;
     text-align: center;
-    display: flex;
+    position: relative;
+    float: left;
     
     
 }
@@ -302,7 +305,6 @@ ul{
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    
 }
 .banner1{
     width: 500%;
